@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encuesta.cs" />
-    <Compile Include="ProcesoEncuestas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="uml\encuesta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EncuestasLib\EncuestasLib.csproj">
+      <Project>{0d8e878f-86fa-4d6a-98f9-3ccfe615587a}</Project>
+      <Name>EncuestasLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
